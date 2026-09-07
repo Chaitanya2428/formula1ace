@@ -51,6 +51,7 @@ export function ContactPage() {
               </div>
               <p className="text-sm text-f1-silver">chaitanyamanda2428@gmail.com</p>
                <p className="text-sm text-f1-silver">chaitanyamanda2824@gmail.com</p>
+               <p className="text-sm text-f1-silver">prasanthmallela7@gmail.com</p>
             </div>
             <div className="f1-card p-5">
               <div className="flex items-center gap-2 mb-2">
