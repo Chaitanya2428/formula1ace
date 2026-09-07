@@ -7,7 +7,7 @@ const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', '
 
 export function CalendarPage() {
   const [filter, setFilter] = useState<'all' | 'sprint' | 'past' | 'upcoming'>('all');
-  const now = new Date('2026-08-24');
+  const now = new Date('2026-09-07');
 
   const filtered = races.filter(r => {
     const d = new Date(r.date);

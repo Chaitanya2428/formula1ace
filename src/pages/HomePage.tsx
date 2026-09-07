@@ -10,15 +10,15 @@ import { driverStandings } from '../data/standings';
 
 const heroImage = '/images/teams/cars/mercedes_(2).jpg';
 const newsImages = [
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/2024-08-24_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3434_by_Stepro.jpg/960px-2024-08-24_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3434_by_Stepro.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/2024_Red_Bull_RB20.jpg/960px-2024_Red_Bull_RB20.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Carlos_Sainz_Chinese_GP_2024.jpg/960px-Carlos_Sainz_Chinese_GP_2024.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/2024-08-24_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3318_by_Stepro.jpg/960px-2024-08-24_Motorsport%2C_Formel_1%2C_Gro%C3%9Fer_Preis_der_Niederlande_2024_STP_3318_by_Stepro.jpg',
-  'https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/2026_Chinese_GP_-_Cadillac_-_MAC-26.jpg/960px-2026_Chinese_GP_-_Cadillac_-_MAC-26.jpg',
+  'https://images.pexels.com/photos/13641535/pexels-photo-13641535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/29283584/pexels-photo-29283584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/28680795/pexels-photo-28680795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/14809396/pexels-photo-14809396.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/31991104/pexels-photo-31991104.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
 ];
 
 const newsArticles = [
-  { tag: 'Feature', title: 'Norris stuns Verstappen at Zandvoort to win the Dutch Grand Prix', excerpt: 'The McLaren driver claimed his second victory of the season, holding off championship leader Antonelli in a thrilling finale.', image: newsImages[0] },
+  { tag: 'Feature', title: 'Leclerc triumphs at Monza as Ferrari roar to Italian Grand Prix glory', excerpt: 'The Ferrari driver delivered a masterclass in front of the Tifosi, holding off championship leader Antonelli in a thrilling Italian Grand Prix.', image: newsImages[0] },
   { tag: 'Analysis', title: 'What will Verstappen do next amid Red Bull struggles?', excerpt: 'With Red Bull trailing Mercedes and Ferrari, the four-time champions future is the talk of the paddock.', image: newsImages[1] },
   { tag: 'Report', title: 'How improving Hadjar is learning from Verstappen', excerpt: 'The French rookie is finding his feet at Red Bull alongside the four-time champion.', image: newsImages[2] },
   { tag: 'Feature', title: '10 of Ferraris most iconic triumphs on their path to 250 F1 wins', excerpt: 'From Fangio to Leclerc, we look back at the Scuderias greatest victories.', image: newsImages[3] },
@@ -26,10 +26,10 @@ const newsArticles = [
 ];
 
 const videoHighlights = [
-  { title: 'Race Highlights: 2026 Dutch Grand Prix', duration: '8:05', image: newsImages[0] },
-  { title: 'Qualifying Highlights: 2026 Dutch Grand Prix', duration: '7:56', image: newsImages[1] },
-  { title: 'Top 10 Onboard Moments: 2026 Dutch Grand Prix', duration: '14:48', image: newsImages[2] },
-  { title: 'Jolyon Palmers Analysis: Norris denial of Verstappen at Zandvoort', duration: '16:19', image: newsImages[3] },
+  { title: 'Race Highlights: 2026 Italian Grand Prix', duration: '8:05', image: newsImages[0] },
+  { title: 'Qualifying Highlights: 2026 Italian Grand Prix', duration: '7:56', image: newsImages[1] },
+  { title: 'Top 10 Onboard Moments: 2026 Italian Grand Prix', duration: '14:48', image: newsImages[2] },
+  { title: 'Jolyon Palmers Analysis: Leclercs Monza masterclass for Ferrari', duration: '16:19', image: newsImages[3] },
 ];
 
 export function HomePage() {
@@ -61,7 +61,7 @@ export function HomePage() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 mb-4 animate-fade-in">
               <span className="f1-tag">2026 Season</span>
-              <span className="text-xs font-display font-bold uppercase tracking-wider text-f1-silver">Round 15 of 24</span>
+              <span className="text-xs font-display font-bold uppercase tracking-wider text-f1-silver">Round 16 of 24</span>
             </div>
             <h1 className="font-display font-black text-4xl md:text-6xl lg:text-7xl tracking-tight leading-[1.05] text-balance animate-fade-in-up">
               Welcome to<br /><span className="text-f1-red">Formula One Ace</span>
@@ -69,6 +69,11 @@ export function HomePage() {
             <p className="mt-4 text-lg md:text-xl text-f1-silver max-w-xl animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
               Everything about Formula 1 in one place.
             </p>
+            <div className="mt-4 animate-fade-in-up" style={{ animationDelay: '0.25s' }}>
+              <p className="font-display font-bold text-base md:text-lg text-white italic">
+                "You know what that is?? Simply. Lovely!"
+              </p>
+            </div>
             <div className="mt-6 flex flex-wrap gap-3 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
               <button onClick={() => navigate('/drivers')} className="btn-f1 group">
                 Explore <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
