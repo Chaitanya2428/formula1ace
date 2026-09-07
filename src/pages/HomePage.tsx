@@ -8,7 +8,7 @@ import { teams } from '../data/teams';
 import { races } from '../data/races';
 import { driverStandings } from '../data/standings';
 
-const heroImage = '/images/teams/cars/mercedes-w11.jpg';
+const heroImage = '/images/teams/cars/mercedes_(2).jpg';
 const newsImages = [
   'https://images.pexels.com/photos/13641535/pexels-photo-13641535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/29283584/pexels-photo-29283584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
@@ -69,10 +69,7 @@ export function HomePage() {
             <p className="mt-4 text-lg md:text-xl text-f1-silver max-w-xl animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
               Everything about Formula 1 in one place.
             </p>
-            <div className="mt-4 animate-fade-in-up space-y-2" style={{ animationDelay: '0.25s' }}>
-              <p className="font-display font-bold text-base md:text-lg text-f1-red italic">
-                "Lewis, remember who you are mate"
-              </p>
+            <div className="mt-4 animate-fade-in-up" style={{ animationDelay: '0.25s' }}>
               <p className="font-display font-bold text-base md:text-lg text-white italic">
                 "You know what that is?? Simply. Lovely!"
               </p>

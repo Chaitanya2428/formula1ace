@@ -43,7 +43,7 @@ export const teams: Team[] = [
     championships: 16,
     founded: 1950,
     color: '#E8002D',
-    carImage: 'https://images.pexels.com/photos/13641535/pexels-photo-13641535.jpeg?auto=compress&cs=tinysrgb&h=400&w=600',
+    carImage: '/images/teams/cars/ferrari-car.webp',
     logo: '/images/teams/cars/ferrari-logo.webp',
     history:
       'The oldest and most successful team in Formula 1 history, Scuderia Ferrari has competed in every season since 1950. The Lewis Hamilton era at Ferrari began in 2025, and the team enters 2026 with new regulations chasing its first championship since 2008 with a formidable Leclerc-Hamilton lineup.',
@@ -77,8 +77,8 @@ export const teams: Team[] = [
     championships: 8,
     founded: 1954,
     color: '#27F4D2',
-    carImage: '/images/teams/cars/mercedes-w11.jpg',
-    logo: 'https://images.pexels.com/photos/28680795/pexels-photo-28680795.jpeg?auto=compress&cs=tinysrgb&h=120&w=120',
+    carImage: '/images/teams/cars/mercedes-car.webp',
+    logo: '/images/teams/cars/mercedes-logo.webp',
     history:
       'Mercedes dominated 2014-2021 with eight consecutive constructors titles. For 2026, the Silver Arrows have been the early pacesetters under the new regulations, with Kimi Antonelli emerging as a race winner and George Russell leading the charge.',
     drivers: ['george-russell', 'kimiantonelli'],
@@ -112,7 +112,7 @@ export const teams: Team[] = [
     founded: 1981,
     color: '#0093CC',
     carImage: '/images/teams/cars/alpine-car.webp',
-    logo: '/images/teams/cars/alpine.png',
+    logo: '/images/teams/cars/alpine-logo.webp',
     history:
       'Alpine traces its roots through Benetton and Renault, winning championships with Schumacher and Alonso. For 2026, the team switches to Mercedes power units after decades with Renault, with Franco Colapinto joining Pierre Gasly to form an all-new lineup.',
     drivers: ['pierre-gasly', 'franco-colapinto'],
@@ -128,8 +128,8 @@ export const teams: Team[] = [
     championships: 9,
     founded: 1977,
     color: '#64C4FF',
-    carImage: 'https://images.pexels.com/photos/29252129/pexels-photo-29252129.jpeg?auto=compress&cs=tinysrgb&h=400&w=600',
-    logo: 'https://images.pexels.com/photos/35219022/pexels-photo-35219022.jpeg?auto=compress&cs=tinysrgb&h=120&w=120',
+    carImage: '/images/teams/cars/williams-car.webp',
+    logo: '/images/teams/cars/williams-logo.webp',
     history:
       'Founded by Frank Williams in 1977, Williams dominated the 1980s and 1990s with nine constructors titles. Under James Vowles, the team has rebuilt steadily. For 2026, Carlos Sainz and Alex Albon form one of the most experienced and competitive driver pairings on the grid.',
     drivers: ['alexander-albon', 'carlos-sainz'],
@@ -179,7 +179,7 @@ export const teams: Team[] = [
     championships: 0,
     founded: 2016,
     color: '#B6BABD',
-    carImage: 'https://images.pexels.com/photos/38184115/pexels-photo-38184115.jpeg?auto=compress&cs=tinysrgb&h=400&w=600',
+    carImage: '/images/teams/cars/haas-car.webp',
     logo: '/images/teams/cars/haas-logo.webp',
     history:
       'Haas is the only American team on the grid, founded by Gene Haas in 2016. For 2026, the team fields Oliver Bearman — who impressed as a Ferrari substitute in 2024 — alongside experienced Frenchman Esteban Ocon, forming a strong blend of youth and experience.',
@@ -197,7 +197,7 @@ export const teams: Team[] = [
     founded: 2026,
     color: '#D4AF37',
     carImage: '/images/teams/cars/cadillac-car.webp',
-    logo: 'https://images.pexels.com/photos/29252129/pexels-photo-29252129.jpeg?auto=compress&cs=tinysrgb&h=120&w=120',
+    logo: '/images/teams/cars/cadillac-logo.webp',
     history:
       'Cadillac joins Formula 1 in 2026 as the sport\'s first new team in a decade and the 11th constructor on the grid. Backed by General Motors and TWG Global, the American team brings Valtteri Bottas and Sergio Pérez — with a combined 500+ race starts — to lead its debut campaign.',
     drivers: ['valtteri-bottas', 'sergio-perez'],
