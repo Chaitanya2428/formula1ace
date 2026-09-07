@@ -8,7 +8,7 @@ import { teams } from '../data/teams';
 import { races } from '../data/races';
 import { driverStandings } from '../data/standings';
 
-const heroImage = 'https://images.pexels.com/photos/28680795/pexels-photo-28680795.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600';
+const heroImage = '/images/teams/cars/mercedes-w11.jpg';
 const newsImages = [
   'https://images.pexels.com/photos/13641535/pexels-photo-13641535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/29283584/pexels-photo-29283584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
