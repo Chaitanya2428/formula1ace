@@ -70,7 +70,7 @@ export function HomePage() {
               Everything about Formula 1 in one place.
             </p>
             <div className="mt-4 animate-fade-in-up" style={{ animationDelay: '0.25s' }}>
-              <p className="font-display font-bold text-lg md:text-xl text-red italic">
+              <p className="font-display font-bold text-lg md:text-xl text-red  italic">
                 "Lewis, remember who you are mate"
               </p>
               <p className="font-display font-bold text-base md:text-lg text-white italic mt-1">
