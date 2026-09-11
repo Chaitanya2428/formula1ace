@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowRight, Calendar, Users, Car, Flag, ChevronRight, Trophy, Gauge, Zap } from 'lucide-react';
+import { ArrowRight, Calendar, Users, Car, Flag, ChevronRight, Trophy, Gauge, Zap, Crown, Edit3, Code2, Palette, PenTool } from 'lucide-react';
 import { useRouter } from '../lib/router';
 import { Reveal } from '../components/Reveal';
 import { AnimatedCounter } from '../components/AnimatedCounter';
@@ -30,6 +30,14 @@ const videoHighlights = [
   { title: 'Qualifying Highlights: 2026 Italian Grand Prix', duration: '7:56', image: newsImages[1] },
   { title: 'Top 10 Onboard Moments: 2026 Italian Grand Prix', duration: '14:48', image: newsImages[2] },
   { title: 'Jolyon Palmers Analysis: Leclercs Monza masterclass for Ferrari', duration: '16:19', image: newsImages[3] },
+];
+
+const creators = [
+  { name: 'Chaitanaya', id: '24030-CM-175', role: 'Creator', icon: Crown, quote: 'If you no longer go for a gap that exists, you are no longer a racing driver.' },
+  { name: 'Prasanth', id: '24030-CM-174', role: 'Editor', icon: Edit3, quote: 'The car is the art. The driver is the artist. The track is the canvas.' },
+  { name: 'Jagadeesh', id: '24030-CM-167', role: 'Developer', icon: Code2, quote: 'Racing is life. Anything that happens before or after is just waiting.' },
+  { name: 'Veerendra', id: '24030-CM-177', role: 'Designer', icon: Palette, quote: 'Speed is not just about going fast. It is about controlling the chaos.' },
+  { name: 'Jeevan', id: '24030-CM-168', role: 'Content Writer', icon: PenTool, quote: 'Champions are made from something deep inside them — a desire, a dream, a vision.' },
 ];
 
 export function HomePage() {
@@ -70,7 +78,7 @@ export function HomePage() {
               Everything about Formula 1 in one place.
             </p>
             <div className="mt-4 animate-fade-in-up" style={{ animationDelay: '0.25s' }}>
-              <p className="font-display font-bold text-lg md:text-xl text-red  italic">
+              <p className="font-display font-bold text-lg md:text-xl text-white italic">
                 "Lewis, remember who you are mate"
               </p>
               <p className="font-display font-bold text-base md:text-lg text-white italic mt-1">
@@ -242,6 +250,38 @@ export function HomePage() {
               </button>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* MEET THE TEAM */}
+      <section className="py-12 px-4 md:px-6 max-w-[1400px] mx-auto">
+        <div className="f1-section-header">
+          <h2 className="f1-section-title">Meet the Team</h2>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+          {creators.map((c, i) => {
+            const Icon = c.icon;
+            return (
+              <Reveal key={c.id} delay={i * 60}>
+                <div className="f1-card p-5 h-full group relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-f1-red/5 rounded-full -translate-y-8 translate-x-8 transition-transform duration-500 group-hover:scale-150" />
+                  <div className="relative">
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="w-11 h-11 bg-f1-red/10 flex items-center justify-center text-f1-red group-hover:scale-110 transition-transform">
+                        <Icon size={20} />
+                      </div>
+                      <span className="f1-tag text-[9px]">{c.role}</span>
+                    </div>
+                    <h3 className="font-display font-black text-lg leading-tight group-hover:text-f1-red transition-colors">{c.name}</h3>
+                    <p className="text-[10px] font-mono text-f1-silver mt-0.5 mb-3">{c.id}</p>
+                    <div className="border-l-2 border-f1-red pl-3">
+                      <p className="text-xs italic text-f1-silver leading-relaxed">"{c.quote}"</p>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            );
+          })}
         </div>
       </section>
 

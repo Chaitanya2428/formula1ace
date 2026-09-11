@@ -6,7 +6,7 @@ interface Props {
 
 type Phase = 'reveal' | 'zoom' | 'countdown-3' | 'countdown-2' | 'countdown-1' | 'go' | 'done';
 
-const heroCarImage = 'https://images.pexels.com/photos/33968212/pexels-photo-33968212.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600';
+const donutImage = 'https://images.pexels.com/photos/32125143/pexels-photo-32125143.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600';
 
 export function WelcomeScreen({ onComplete }: Props) {
   const [phase, setPhase] = useState<Phase>('reveal');
@@ -27,11 +27,11 @@ export function WelcomeScreen({ onComplete }: Props) {
 
   return (
     <div className={`fixed inset-0 z-[200] flex flex-col items-center justify-center bg-f1-black overflow-hidden transition-opacity duration-500 ${phase === 'done' ? 'opacity-0' : 'opacity-100'}`}>
-      {/* Real F1 car background */}
+      {/* Donut / burnout background */}
       <div className="absolute inset-0">
         <img
-          src={heroCarImage}
-          alt="F1 car drifting"
+          src={donutImage}
+          alt="F1 car donuts celebration"
           onLoad={() => setLoaded(true)}
           className={`w-full h-full object-cover transition-all duration-[2200ms] ease-out ${
             loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-125'
@@ -40,6 +40,24 @@ export function WelcomeScreen({ onComplete }: Props) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-f1-black via-f1-black/40 to-f1-black/60" />
         <div className="absolute inset-0 bg-gradient-to-r from-f1-black/60 via-transparent to-f1-black/60" />
+      </div>
+
+      {/* Tire smoke particles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {phase !== 'done' && phase !== 'go' && Array.from({ length: 6 }).map((_, i) => (
+          <div
+            key={i}
+            className="smoke-particle absolute rounded-full bg-white/20 blur-xl"
+            style={{
+              width: `${60 + i * 20}px`,
+              height: `${60 + i * 20}px`,
+              left: `${15 + i * 14}%`,
+              bottom: '10%',
+              animationDelay: `${i * 0.2}s`,
+              animationDuration: '1.2s',
+            }}
+          />
+        ))}
       </div>
 
       <div className="absolute top-0 left-0 right-0 h-[3px] bg-f1-red z-20" />
@@ -55,7 +73,7 @@ export function WelcomeScreen({ onComplete }: Props) {
       {(phase === 'reveal' || phase === 'zoom') && (
         <div className="relative z-20 text-center animate-fade-in-up">
           <p className="text-lg md:text-2xl font-display font-bold text-white tracking-wide">
-            You know what that is?? <span className="text-f1-red">Simply. Lovely!</span>
+            Lights Out! <span className="text-f1-red">Away We Go!</span>
           </p>
         </div>
       )}
