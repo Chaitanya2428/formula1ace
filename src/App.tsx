@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import { RouterProvider, useRouter } from './lib/router';
 import { ThemeProvider } from './lib/theme';
+import { AuthProvider } from './lib/auth';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { ScrollToTop } from './components/ScrollToTop';
 import { SearchModal } from './components/SearchModal';
+import { AuthModal } from './components/AuthModal';
 import { ParticleBackground } from './components/ParticleBackground';
 import { WelcomeScreen } from './components/WelcomeScreen';
 import { HomePage } from './pages/HomePage';
@@ -25,6 +27,7 @@ import { PlayGamePage } from './pages/PlayGamePage';
 function AppContent() {
   const { route } = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
+  const [authOpen, setAuthOpen] = useState(false);
 
   const renderPage = () => {
     switch (route.path) {
@@ -48,11 +51,12 @@ function AppContent() {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar onSearch={() => setSearchOpen(true)} />
+      <Navbar onSearch={() => setSearchOpen(true)} onAuth={() => setAuthOpen(true)} />
       <main className="flex-1">{renderPage()}</main>
       <Footer />
       <ScrollToTop />
       <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} />
+      <AuthModal open={authOpen} onClose={() => setAuthOpen(false)} />
     </div>
   );
 }
@@ -70,11 +74,13 @@ function App() {
 
   return (
     <ThemeProvider>
-      <RouterProvider>
-        <ParticleBackground />
-        {!welcomeDone && <WelcomeScreen onComplete={() => setWelcomeDone(true)} />}
-        <AppContent />
-      </RouterProvider>
+      <AuthProvider>
+        <RouterProvider>
+          <ParticleBackground />
+          {!welcomeDone && <WelcomeScreen onComplete={() => setWelcomeDone(true)} />}
+          <AppContent />
+        </RouterProvider>
+      </AuthProvider>
     </ThemeProvider>
   );
 }

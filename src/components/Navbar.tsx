@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Search, Sun, Moon } from 'lucide-react';
+import { Menu, X, Search, Sun, Moon, User } from 'lucide-react';
 import { useRouter } from '../lib/router';
 import { useTheme } from '../lib/theme';
+import { useAuth } from '../lib/auth';
 
 const navItems = [
   { label: 'Home', path: '/' },
@@ -22,11 +23,13 @@ const navItems = [
 
 interface Props {
   onSearch: () => void;
+  onAuth: () => void;
 }
 
-export function Navbar({ onSearch }: Props) {
+export function Navbar({ onSearch, onAuth }: Props) {
   const { route, navigate } = useRouter();
   const { theme, toggle } = useTheme();
+  const { profile } = useAuth();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -72,6 +75,21 @@ export function Navbar({ onSearch }: Props) {
 
           {/* Right actions */}
           <div className="flex items-center gap-1 shrink-0">
+            <button onClick={onAuth} aria-label={profile ? 'Account' : 'Sign in'} className="flex items-center gap-2 px-3 h-9 text-sm font-display font-bold uppercase tracking-wider text-f1-silver hover:text-f1-red transition-colors">
+              {profile ? (
+                <>
+                  <div className="w-6 h-6 bg-f1-red flex items-center justify-center font-display font-black text-xs text-white" style={{ clipPath: 'polygon(0 0, 100% 0, calc(100% - 4px) 100%, 0 100%)' }}>
+                    {(profile.full_name || profile.email).charAt(0).toUpperCase()}
+                  </div>
+                  <span className="hidden sm:block max-w-[80px] truncate">{profile.full_name?.split(' ')[0] || 'Account'}</span>
+                </>
+              ) : (
+                <>
+                  <User size={16} />
+                  <span className="hidden sm:block">Sign In</span>
+                </>
+              )}
+            </button>
             <button onClick={onSearch} aria-label="Search" className="w-9 h-9 flex items-center justify-center text-f1-silver hover:text-f1-red transition-colors">
               <Search size={18} />
             </button>
