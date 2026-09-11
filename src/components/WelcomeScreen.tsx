@@ -6,11 +6,10 @@ interface Props {
 
 type Phase = 'reveal' | 'zoom' | 'countdown-3' | 'countdown-2' | 'countdown-1' | 'go' | 'done';
 
-const donutImage = 'https://images.pexels.com/photos/32125143/pexels-photo-32125143.jpeg?auto=compress&cs=tinysrgb&h=900&w=1600';
+const F1_DONUTS_VIDEO = 'https://www.youtube.com/embed/8pn0a_zOdUo';
 
 export function WelcomeScreen({ onComplete }: Props) {
   const [phase, setPhase] = useState<Phase>('reveal');
-  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const timers: ReturnType<typeof setTimeout>[] = [];
@@ -27,16 +26,14 @@ export function WelcomeScreen({ onComplete }: Props) {
 
   return (
     <div className={`fixed inset-0 z-[200] flex flex-col items-center justify-center bg-f1-black overflow-hidden transition-opacity duration-500 ${phase === 'done' ? 'opacity-0' : 'opacity-100'}`}>
-      {/* Donut / burnout background */}
-      <div className="absolute inset-0">
-        <img
-          src={donutImage}
-          alt="F1 car donuts celebration"
-          onLoad={() => setLoaded(true)}
-          className={`w-full h-full object-cover transition-all duration-[2200ms] ease-out ${
-            loaded ? 'opacity-100 scale-100' : 'opacity-0 scale-125'
-          } ${phase === 'zoom' || phase === 'countdown-3' || phase === 'countdown-2' || phase === 'countdown-1' || phase === 'go' ? 'scale-110' : ''}`}
-          style={{ transition: 'opacity 1.5s ease-out, transform 0.8s cubic-bezier(0.16,1,0.3,1)' }}
+      {/* F1 donuts video background */}
+      <div className="absolute inset-0 overflow-hidden">
+        <iframe
+          src={`${F1_DONUTS_VIDEO}?autoplay=1&mute=1&controls=0&loop=1&playlist=8pn0a_zOdUo&rel=0&showinfo=0&modestbranding=1&playsinline=1&disablekb=1`}
+          title="F1 Donuts"
+          allow="autoplay; encrypted-media"
+          className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[177.78vh] h-[100vh] min-w-full min-h-full pointer-events-none"
+          style={{ border: 0, scale: '1.35' }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-f1-black via-f1-black/40 to-f1-black/60" />
         <div className="absolute inset-0 bg-gradient-to-r from-f1-black/60 via-transparent to-f1-black/60" />
