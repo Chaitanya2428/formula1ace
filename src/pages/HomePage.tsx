@@ -10,26 +10,26 @@ import { driverStandings } from '../data/standings';
 
 const heroImage = '/images/teams/cars/mercedes_(2).jpg';
 const newsImages = [
-  'https://images.pexels.com/photos/13641535/pexels-photo-13641535.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/29283584/pexels-photo-29283584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/39730296/pexels-photo-39730296.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/39730301/pexels-photo-39730301.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/39730311/pexels-photo-39730311.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/13857975/pexels-photo-13857975.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/28680795/pexels-photo-28680795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/14809396/pexels-photo-14809396.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/31991104/pexels-photo-31991104.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
 ];
 
 const newsArticles = [
-  { tag: 'Feature', title: 'Leclerc triumphs at Monza as Ferrari roar to Italian Grand Prix glory', excerpt: 'The Ferrari driver delivered a masterclass in front of the Tifosi, holding off championship leader Antonelli in a thrilling Italian Grand Prix.', image: newsImages[0] },
-  { tag: 'Analysis', title: 'What will Verstappen do next amid Red Bull struggles?', excerpt: 'With Red Bull trailing Mercedes and Ferrari, the four-time champions future is the talk of the paddock.', image: newsImages[1] },
-  { tag: 'Report', title: 'How improving Hadjar is learning from Verstappen', excerpt: 'The French rookie is finding his feet at Red Bull alongside the four-time champion.', image: newsImages[2] },
-  { tag: 'Feature', title: '10 of Ferraris most iconic triumphs on their path to 250 F1 wins', excerpt: 'From Fangio to Leclerc, we look back at the Scuderias greatest victories.', image: newsImages[3] },
-  { tag: 'Report', title: 'How Cadillac have shown they are gaining on the F1 midfield', excerpt: 'The American teams improved pace at Silverstone proved they are closing the gap.', image: newsImages[4] },
+  { tag: 'Race Report', title: 'Antonelli conquers Baku as Mercedes extends championship lead', excerpt: 'Kimi Antonelli claimed his seventh win of the 2026 season at the Azerbaijan Grand Prix, mastering the Baku City Circuit to finish ahead of Oscar Piastri and Max Verstappen in a thrilling street fight.', image: newsImages[0] },
+  { tag: 'Analysis', title: 'Piastri charges to P2 — McLarens Baku resurgence signals title fight intent', excerpt: 'Oscar Piastris storming drive to second in Baku proved McLaren are far from out of the championship battle as the season enters its final stretch.', image: newsImages[1] },
+  { tag: 'Feature', title: 'Verstappen back on the podium — can Red Bull sustain the fightback?', excerpt: 'Max Verstappens third-place finish in Baku was his first podium since the Austrian Grand Prix, offering hope that Red Bulls mid-season slump is behind them.', image: newsImages[2] },
+  { tag: 'Report', title: 'Sprint shootout drama — Baku delivers another classic qualifying upset', excerpt: 'The Baku sprint race lived up to its chaotic reputation with a safety car reshuffle and a late collision that shuffled the grid for Sundays main event.', image: newsImages[3] },
+  { tag: 'Analysis', title: 'Mercedes one-two in constructors — can anyone catch them in 2026?', excerpt: 'With a 113-point lead over Ferrari after Baku, Mercedes are cruising toward the constructors crown. We analyse what their rivals must do to close the gap.', image: newsImages[4] },
 ];
 
 const videoHighlights = [
-  { title: 'Race Highlights: 2026 Italian Grand Prix', duration: '8:05', image: newsImages[0] },
-  { title: 'Qualifying Highlights: 2026 Italian Grand Prix', duration: '7:56', image: newsImages[1] },
-  { title: 'Top 10 Onboard Moments: 2026 Italian Grand Prix', duration: '14:48', image: newsImages[2] },
-  { title: 'Jolyon Palmers Analysis: Leclercs Monza masterclass for Ferrari', duration: '16:19', image: newsImages[3] },
+  { title: 'Race Highlights: 2026 Azerbaijan Grand Prix', duration: '8:32', image: newsImages[0] },
+  { title: 'Qualifying Highlights: 2026 Azerbaijan GP', duration: '7:45', image: newsImages[1] },
+  { title: 'Top 10 Onboard Moments: Baku Street Circuit', duration: '12:18', image: newsImages[2] },
+  { title: 'Antonelli interview: My seventh win of the season', duration: '5:29', image: newsImages[3] },
 ];
 
 const creators = [
@@ -69,7 +69,7 @@ export function HomePage() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 mb-4 animate-fade-in">
               <span className="f1-tag">2026 Season</span>
-              <span className="text-xs font-display font-bold uppercase tracking-wider text-f1-silver">Round 16 of 24</span>
+              <span className="text-xs font-display font-bold uppercase tracking-wider text-f1-silver">Round 17 of 24</span>
             </div>
             <h1 className="font-display font-black text-4xl md:text-6xl lg:text-7xl tracking-tight leading-[1.05] text-balance animate-fade-in-up">
               Welcome to<br /><span className="text-f1-red">Formula One Ace</span>

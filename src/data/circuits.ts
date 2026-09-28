@@ -96,8 +96,8 @@ export const circuits: Circuit[] = [
   },
   {
     id: 'baku', round: 17, name: 'Baku City Circuit', country: 'Azerbaijan', flag: '🇦🇿',
-    length: '6.003 km', laps: 51, lapRecord: '1:43.009', weather: 'Dry, 26°C', lastWinner: 'Oscar Piastri', dates: '18–20 Sep',
-    map: 'https://images.pexels.com/photos/28832062/pexels-photo-28832062.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    length: '6.003 km', laps: 51, lapRecord: '1:43.226', weather: 'Dry, 26°C', lastWinner: 'Kimi Antonelli', dates: '25–26 Sep',
+    map: 'https://images.pexels.com/photos/39730296/pexels-photo-39730296.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     id: 'marina-bay', round: 18, name: 'Marina Bay Street Circuit', country: 'Singapore', flag: '🇸🇬',
