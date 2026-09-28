@@ -18,18 +18,18 @@ const newsImages = [
 ];
 
 const newsArticles = [
-  { tag: 'Race Report', title: 'Antonelli conquers Baku as Mercedes extends championship lead', excerpt: 'Kimi Antonelli claimed his seventh win of the 2026 season at the Azerbaijan Grand Prix, mastering the Baku City Circuit to finish ahead of Oscar Piastri and Max Verstappen in a thrilling street fight.', image: newsImages[0] },
-  { tag: 'Analysis', title: 'Piastri charges to P2 — McLarens Baku resurgence signals title fight intent', excerpt: 'Oscar Piastris storming drive to second in Baku proved McLaren are far from out of the championship battle as the season enters its final stretch.', image: newsImages[1] },
-  { tag: 'Feature', title: 'Verstappen back on the podium — can Red Bull sustain the fightback?', excerpt: 'Max Verstappens third-place finish in Baku was his first podium since the Austrian Grand Prix, offering hope that Red Bulls mid-season slump is behind them.', image: newsImages[2] },
+  { tag: 'Race Report', title: 'Russell conquers Baku as Mercedes secures dominant one-two finish', excerpt: 'George Russell claimed his third win of the 2026 season at the Azerbaijan Grand Prix, leading teammate Kimi Antonelli home for a Mercedes one-two on the streets of Baku, with Oscar Piastri completing the podium.', image: newsImages[0] },
+  { tag: 'Analysis', title: 'Antonelli extends championship lead with P2 in Baku', excerpt: 'Despite finishing behind his teammate, Kimi Antonellis second place stretched his drivers championship lead to 59 points as the 2026 season enters its final stretch.', image: newsImages[1] },
+  { tag: 'Feature', title: 'Piastri grabs the final podium spot — McLarens Baku pace impresses', excerpt: 'Oscar Piastris third-place finish in Baku showed McLaren have the pace to challenge Mercedes at street circuits, setting up an intense run to the finale.', image: newsImages[2] },
   { tag: 'Report', title: 'Sprint shootout drama — Baku delivers another classic qualifying upset', excerpt: 'The Baku sprint race lived up to its chaotic reputation with a safety car reshuffle and a late collision that shuffled the grid for Sundays main event.', image: newsImages[3] },
-  { tag: 'Analysis', title: 'Mercedes one-two in constructors — can anyone catch them in 2026?', excerpt: 'With a 113-point lead over Ferrari after Baku, Mercedes are cruising toward the constructors crown. We analyse what their rivals must do to close the gap.', image: newsImages[4] },
+  { tag: 'Analysis', title: 'Mercedes one-two — can anyone catch them in the constructors fight?', excerpt: 'With a 123-point lead over Ferrari after their Baku one-two, Mercedes are cruising toward the constructors crown. We analyse what their rivals must do to close the gap.', image: newsImages[4] },
 ];
 
 const videoHighlights = [
   { title: 'Race Highlights: 2026 Azerbaijan Grand Prix', duration: '8:32', image: newsImages[0] },
   { title: 'Qualifying Highlights: 2026 Azerbaijan GP', duration: '7:45', image: newsImages[1] },
   { title: 'Top 10 Onboard Moments: Baku Street Circuit', duration: '12:18', image: newsImages[2] },
-  { title: 'Antonelli interview: My seventh win of the season', duration: '5:29', image: newsImages[3] },
+  { title: 'Russell interview: Best drive of my 2026 season', duration: '5:29', image: newsImages[3] },
 ];
 
 const creators = [

@@ -96,7 +96,7 @@ export const circuits: Circuit[] = [
   },
   {
     id: 'baku', round: 17, name: 'Baku City Circuit', country: 'Azerbaijan', flag: '🇦🇿',
-    length: '6.003 km', laps: 51, lapRecord: '1:43.226', weather: 'Dry, 26°C', lastWinner: 'Kimi Antonelli', dates: '25–26 Sep',
+    length: '6.003 km', laps: 51, lapRecord: '1:43.226', weather: 'Dry, 26°C', lastWinner: 'George Russell', dates: '25–26 Sep',
     map: 'https://images.pexels.com/photos/39730296/pexels-photo-39730296.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
