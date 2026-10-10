@@ -10,26 +10,26 @@ import { driverStandings } from '../data/standings';
 
 const heroImage = '/images/teams/cars/mercedes_(2).jpg';
 const newsImages = [
-  'https://images.pexels.com/photos/39730296/pexels-photo-39730296.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/39730301/pexels-photo-39730301.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/39730311/pexels-photo-39730311.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/34247182/pexels-photo-34247182.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/34247186/pexels-photo-34247186.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/11735216/pexels-photo-11735216.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/13857975/pexels-photo-13857975.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/28680795/pexels-photo-28680795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
 ];
 
 const newsArticles = [
-  { tag: 'Race Report', title: 'Russell conquers Baku as Mercedes secures dominant one-two finish', excerpt: 'George Russell claimed his third win of the 2026 season at the Azerbaijan Grand Prix, leading teammate Kimi Antonelli home for a Mercedes one-two on the streets of Baku, with Oscar Piastri completing the podium.', image: newsImages[0] },
-  { tag: 'Analysis', title: 'Antonelli extends championship lead with P2 in Baku', excerpt: 'Despite finishing behind his teammate, Kimi Antonellis second place stretched his drivers championship lead to 59 points as the 2026 season enters its final stretch.', image: newsImages[1] },
-  { tag: 'Feature', title: 'Piastri grabs the final podium spot — McLarens Baku pace impresses', excerpt: 'Oscar Piastris third-place finish in Baku showed McLaren have the pace to challenge Mercedes at street circuits, setting up an intense run to the finale.', image: newsImages[2] },
-  { tag: 'Report', title: 'Sprint shootout drama — Baku delivers another classic qualifying upset', excerpt: 'The Baku sprint race lived up to its chaotic reputation with a safety car reshuffle and a late collision that shuffled the grid for Sundays main event.', image: newsImages[3] },
-  { tag: 'Analysis', title: 'Mercedes one-two — can anyone catch them in the constructors fight?', excerpt: 'With a 123-point lead over Ferrari after their Baku one-two, Mercedes are cruising toward the constructors crown. We analyse what their rivals must do to close the gap.', image: newsImages[4] },
+  { tag: 'Race Report', title: 'Norris storms to victory in Malaysia as McLaren dominate at Sepang', excerpt: 'Lando Norris claimed his third win of the 2026 season at the Malaysian Grand Prix, mastering the heat and humidity of Sepang to finish ahead of Charles Leclerc and Max Verstappen in a thrilling race.', image: newsImages[0] },
+  { tag: 'Analysis', title: 'Leclerc under pressure — Ferraris P2 not enough to catch Mercedes', excerpt: 'Charles Leclercs second place in Malaysia kept Ferrari in the fight, but Mercedes championship lead looks increasingly unassailable with six rounds remaining.', image: newsImages[1] },
+  { tag: 'Feature', title: 'Verstappen back on the podium — Red Bulls Sepang resurgence', excerpt: 'Max Verstappens third-place finish at Sepang offered hope that Red Bulls mid-season slump is firmly behind them as the season enters its final stretch.', image: newsImages[2] },
+  { tag: 'Report', title: 'Antonelli extends championship lead despite P5 finish in Malaysia', excerpt: 'Kimi Antonelli finished fifth at Sepang but still stretched his drivers championship lead to 57 points as title rival George Russell could only manage P6.', image: newsImages[3] },
+  { tag: 'Analysis', title: 'McLaren close the gap to Ferrari — constructors battle heats up', excerpt: 'Lando Norriss win and Oscar Piastris P4 at Sepang slashed the gap to Ferrari in the constructors standings to just 48 points with six races to go.', image: newsImages[4] },
 ];
 
 const videoHighlights = [
-  { title: 'Race Highlights: 2026 Azerbaijan Grand Prix', duration: '8:32', image: newsImages[0] },
-  { title: 'Qualifying Highlights: 2026 Azerbaijan GP', duration: '7:45', image: newsImages[1] },
-  { title: 'Top 10 Onboard Moments: Baku Street Circuit', duration: '12:18', image: newsImages[2] },
-  { title: 'Russell interview: Best drive of my 2026 season', duration: '5:29', image: newsImages[3] },
+  { title: 'Race Highlights: 2026 Malaysian Grand Prix', duration: '8:45', image: newsImages[0] },
+  { title: 'Qualifying Highlights: 2026 Malaysian GP', duration: '7:32', image: newsImages[1] },
+  { title: 'Top 10 Onboard Moments: Sepang Circuit', duration: '13:22', image: newsImages[2] },
+  { title: 'Norris interview: Best win of the season', duration: '5:41', image: newsImages[3] },
 ];
 
 const fiaRegulations = [
@@ -175,7 +175,7 @@ export function HomePage() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 mb-4 animate-fade-in">
               <span className="f1-tag">2026 Season</span>
-              <span className="text-xs font-display font-bold uppercase tracking-wider text-f1-silver">Round 17 of 24</span>
+              <span className="text-xs font-display font-bold uppercase tracking-wider text-f1-silver">Round 18 of 24</span>
             </div>
             <h1 className="font-display font-black text-4xl md:text-6xl lg:text-7xl tracking-tight leading-[1.05] text-balance animate-fade-in-up">
               Welcome to<br /><span className="text-f1-red">Formula One Ace</span>
