@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { ArrowRight, Calendar, Users, Car, Flag, ChevronRight, Trophy, Gauge, Zap, Crown, Edit3, Code2, Palette, PenTool } from 'lucide-react';
+import { ArrowRight, Calendar, Users, Car, Flag, ChevronRight, Trophy, Gauge, Zap, Crown, Edit3, Code2, Palette, PenTool, BookOpen, Scale, Fuel, Cog, ShieldCheck, Timer, Wrench, Wind, Plus, Minus } from 'lucide-react';
 import { useRouter } from '../lib/router';
 import { Reveal } from '../components/Reveal';
 import { AnimatedCounter } from '../components/AnimatedCounter';
@@ -30,6 +30,112 @@ const videoHighlights = [
   { title: 'Qualifying Highlights: 2026 Azerbaijan GP', duration: '7:45', image: newsImages[1] },
   { title: 'Top 10 Onboard Moments: Baku Street Circuit', duration: '12:18', image: newsImages[2] },
   { title: 'Russell interview: Best drive of my 2026 season', duration: '5:29', image: newsImages[3] },
+];
+
+const fiaRegulations = [
+  {
+    icon: Cog,
+    title: 'Power Unit & Engine Rules',
+    summary: 'The 2026 regulations usher in a new era of hybrid power units.',
+    points: [
+      '50% electric / 50% combustion power split — a massive increase from the current 20% electric ratio.',
+      '1.6L turbo-hybrid V6 internal combustion engine remains, but with simplified and cleaner combustion.',
+      'Removal of the MGU-H (heat energy recovery) — only the MGU-K (kinetic energy recovery) stays.',
+      'Electric motor boosts up to 400 kW (approx. 536 hp), nearly triple the current electric output.',
+      'Sustainable fuel mandate: 100% advanced sustainable fuel with no new fossil carbon.',
+      'Power unit life extended — each driver must use no more than 3 engines per season (down from 4).',
+    ],
+  },
+  {
+    icon: Wind,
+    title: 'Aerodynamics & Car Design',
+    summary: 'Smaller, lighter cars designed to enable closer racing.',
+    points: [
+      'Car weight reduced by approximately 30 kg — minimum weight drops to 768 kg.',
+      'Car width reduced by 100 mm and wheelbase shortened by 150 mm for more nimble handling.',
+      'Active aerodynamics introduced — front and rear wings adjust automatically to reduce drag on straights.',
+      'Downforce reduced by approximately 30% to promote closer wheel-to-wheel racing.',
+      'Moveable aero modes: "Z-mode" for low drag on straights, "X-mode" for high downforce in corners.',
+      'Wheel covers banned and smaller front wings (narrower by 50 mm) to reduce dirty air.',
+    ],
+  },
+  {
+    icon: Fuel,
+    title: 'Fuel & Sustainability',
+    summary: 'Formula 1 goes fully sustainable in 2026.',
+    points: [
+      '100% sustainable fuel — derived from non-food bio-sources or carbon capture technology.',
+      'Fuel tank capacity reduced to 200 kg (down from ~110 kg) due to higher engine efficiency.',
+      'No refuelling during races remains the rule — all fuel must last the full race distance.',
+      'Net-zero carbon footprint target by 2030 across all F1 operations.',
+      'Power unit manufacturers must source sustainable fuel from FIA-approved suppliers only.',
+    ],
+  },
+  {
+    icon: Timer,
+    title: 'Sprint Races & Weekend Format',
+    summary: 'Sprint races return with refined rules for 2026.',
+    points: [
+      '6 sprint races per season (up from 6 in 2025, held at designated rounds).',
+      'Sprint race distance: approximately 100 km or 30 minutes, whichever comes first.',
+      'Sprint qualifying sets the sprint grid — held on Friday, replacing traditional FP2.',
+      'Sprint races award points: P1 gets 8 points, down to P8 who gets 1 point.',
+      'Sprint race result no longer sets the grid for Sundays main Grand Prix — qualifying is standalone.',
+    ],
+  },
+  {
+    icon: Scale,
+    title: 'Points System & Scoring',
+    summary: 'How championship points are awarded in 2026.',
+    points: [
+      'Race points: 25-18-15-12-10-8-6-4-2-1 for the top 10 finishers.',
+      'Fastest lap bonus: 1 point for the fastest lap, but only if the driver finishes in the top 10.',
+      'Sprint race points: 8-7-6-5-4-3-2-1 for the top 8 finishers.',
+      'Constructors championship sums both drivers points across all races.',
+      'Ties broken by countback of race wins, then second places, etc.',
+    ],
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Penalties & Stewards',
+    summary: 'FIA stewards enforce the rules with clear penalty guidelines.',
+    points: [
+      '5-second time penalty: minor offences (e.g., track limits, minor contact).',
+      '10-second time penalty: moderate offences (e.g., unsafe release, causing a collision).',
+      '10-second stop-and-go penalty: serious offences (e.g., ignoring blue flags, dangerous driving).',
+      'Drive-through penalty: must enter pit lane within 3 laps of being issued.',
+      'Grid penalties: carried over to the next race if served during race is not possible.',
+      'Penalty points on super licence: 12 points in 12 months = automatic 1-race ban.',
+    ],
+  },
+  {
+    icon: Wrench,
+    title: 'Tyres, Testing & Budget Cap',
+    summary: 'Sporting regulations around tyres, testing and costs.',
+    points: [
+      'Tyre supplier Pirelli provides slick tyres in 5 dry compounds (C0–C4) plus intermediates and wets.',
+      'Each driver gets 13 sets of dry tyres per weekend (down from 13, with allocation flexibility).',
+      'No tyre blankets from 2026 — teams must manage tyre temperatures on-track.',
+      'Pre-season testing limited to 3 days at one circuit (typically Bahrain).',
+      'In-season testing heavily restricted — only young driver tests and Pirelli tyre tests allowed.',
+      'Budget cap: $135 million per team per year (excluding driver salaries and marketing costs).',
+    ],
+  },
+  {
+    icon: BookOpen,
+    title: 'Race Weekend Basics',
+    summary: 'New to F1? Heres how a Grand Prix weekend works.',
+    points: [
+      'Free Practice 1 (FP1): Friday — 60-minute session for teams to test setups and gather data.',
+      'Sprint Qualifying: Friday — 100 km shootout race that sets the sprint grid (sprint rounds only).',
+      'Free Practice 2 (FP2): Saturday morning — final practice before qualifying.',
+      'Qualifying: Saturday — 3 knockout sessions (Q1: 18 min, Q2: 15 min, Q3: 12 min) setting the race grid.',
+      'Sprint Race: Saturday afternoon (sprint rounds only) — 100 km dash for points.',
+      'Grand Prix: Sunday — the main race, typically 305 km or 2 hours, whichever comes first.',
+      'Grid formation: Cars line up in qualifying order; pole position on the clean side of the track.',
+      'Race start: Standing start from the grid; if conditions are too wet, a rolling start behind the safety car.',
+    ],
+  },
 ];
 
 const creators = [
@@ -253,6 +359,22 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* FIA REGULATIONS & F1 BASICS */}
+      <section className="py-12 px-4 md:px-6 max-w-[1400px] mx-auto">
+        <div className="f1-section-header">
+          <h2 className="f1-section-title">2026 FIA Regulations & F1 Basics</h2>
+          <span className="text-[10px] font-display font-bold uppercase tracking-[0.2em] text-f1-silver">Official Rulebook</span>
+        </div>
+        <p className="text-sm text-f1-silver mb-6 max-w-3xl">
+          The 2026 season marks the biggest regulation overhaul in a generation. New hybrid power units, smaller and lighter cars, active aerodynamics, and 100% sustainable fuel redefine what a Formula 1 car can be. Tap any topic to explore the rules.
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {fiaRegulations.map((reg, i) => (
+            <RegulationCard key={i} reg={reg} delay={i * 60} />
+          ))}
+        </div>
+      </section>
+
       {/* MEET THE TEAM */}
       <section className="py-12 px-4 md:px-6 max-w-[1400px] mx-auto">
         <div className="f1-section-header">
@@ -318,6 +440,42 @@ export function HomePage() {
         </Reveal>
       </section>
     </div>
+  );
+}
+
+function RegulationCard({ reg, delay }: { reg: typeof fiaRegulations[number]; delay: number }) {
+  const [open, setOpen] = useState(false);
+  const Icon = reg.icon;
+  return (
+    <Reveal delay={delay}>
+      <div className="f1-card overflow-hidden h-full">
+        <button
+          onClick={() => setOpen(!open)}
+          className="w-full p-5 flex items-start gap-4 text-left group"
+        >
+          <div className="w-11 h-11 shrink-0 bg-f1-red/10 flex items-center justify-center text-f1-red group-hover:scale-110 transition-transform">
+            <Icon size={20} />
+          </div>
+          <div className="flex-1 min-w-0">
+            <h3 className="font-display font-bold text-sm group-hover:text-f1-red transition-colors leading-tight">{reg.title}</h3>
+            <p className="text-xs text-f1-silver mt-1">{reg.summary}</p>
+          </div>
+          <div className="shrink-0 text-f1-silver group-hover:text-f1-red transition-colors">
+            {open ? <Minus size={18} /> : <Plus size={18} />}
+          </div>
+        </button>
+        <div className={`overflow-hidden transition-all duration-300 ${open ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'}`}>
+          <ul className="px-5 pb-5 pt-0 space-y-2.5">
+            {reg.points.map((point, j) => (
+              <li key={j} className="flex items-start gap-2.5 text-xs text-f1-silver leading-relaxed">
+                <span className="text-f1-red font-mono font-bold shrink-0 mt-0.5">{String(j + 1).padStart(2, '0')}</span>
+                <span>{point}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </Reveal>
   );
 }
 
