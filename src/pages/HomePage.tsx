@@ -10,26 +10,26 @@ import { driverStandings } from '../data/standings';
 
 const heroImage = '/images/teams/cars/mercedes_(2).jpg';
 const newsImages = [
-  'https://images.pexels.com/photos/28680795/pexels-photo-28680795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/29252129/pexels-photo-29252129.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/35219022/pexels-photo-35219022.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/39347624/pexels-photo-39347624.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/13857975/pexels-photo-13857975.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/28680794/pexels-photo-28680794.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/28680795/pexels-photo-28680795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
 ];
 
 const newsArticles = [
-  { tag: 'Race Report', title: 'Norris storms to victory in Malaysia as McLaren dominate at Sepang', excerpt: 'Lando Norris claimed his third win of the 2026 season at the Malaysian Grand Prix, mastering the heat and humidity of Sepang to finish ahead of Charles Leclerc and Max Verstappen in a thrilling race.', image: newsImages[0] },
-  { tag: 'Analysis', title: 'Leclerc under pressure — Ferraris P2 not enough to catch Mercedes', excerpt: 'Charles Leclercs second place in Malaysia kept Ferrari in the fight, but Mercedes championship lead looks increasingly unassailable with six rounds remaining.', image: newsImages[1] },
-  { tag: 'Feature', title: 'Verstappen back on the podium — Red Bulls Sepang resurgence', excerpt: 'Max Verstappens third-place finish at Sepang offered hope that Red Bulls mid-season slump is firmly behind them as the season enters its final stretch.', image: newsImages[2] },
-  { tag: 'Report', title: 'Antonelli extends championship lead despite P5 finish in Malaysia', excerpt: 'Kimi Antonelli finished fifth at Sepang but still stretched his drivers championship lead to 57 points as title rival George Russell could only manage P6.', image: newsImages[3] },
-  { tag: 'Analysis', title: 'McLaren close the gap to Ferrari — constructors battle heats up', excerpt: 'Lando Norriss win and Oscar Piastris P4 at Sepang slashed the gap to Ferrari in the constructors standings to just 48 points with six races to go.', image: newsImages[4] },
+  { tag: 'Race Report', title: 'Verstappen conquers Singapore as Red Bull triumphs at Marina Bay', excerpt: 'Max Verstappen claimed his second win of the 2026 season at the Singapore Grand Prix, mastering the wet conditions at Marina Bay to finish ahead of Charles Leclerc and championship leader Kimi Antonelli in a thrilling race.', image: newsImages[0] },
+  { tag: 'Analysis', title: 'Leclerc back on the podium — Ferraris P2 keeps pressure on Mercedes', excerpt: 'Charles Leclercs second place in Singapore kept Ferrari in the fight, but Mercedes championship lead of 134 points looks increasingly unassailable with six rounds remaining.', image: newsImages[1] },
+  { tag: 'Feature', title: 'Antonelli extends lead to 102 points despite P3 in Singapore', excerpt: 'Kimi Antonelli finished third at Marina Bay but still stretched his drivers championship lead to 102 points as title rival George Russell could only manage ninth.', image: newsImages[2] },
+  { tag: 'Report', title: 'Sprint drama — Verstappen wins rain-hit Singapore Sprint as Russell crashes out', excerpt: 'The Singapore sprint race delivered chaos as Max Verstappen won a rain-shortened sprint, with George Russell crashing out and the McLarens colliding in a dramatic afternoon.', image: newsImages[3] },
+  { tag: 'Analysis', title: 'Red Bull close the gap to McLaren — constructors battle intensifies', excerpt: 'Max Verstappens win and Isack Hadjars points finish at Singapore slashed Red Bulls deficit to McLaren to just seven points in the constructors standings with six races to go.', image: newsImages[4] },
 ];
 
 const videoHighlights = [
-  { title: 'Race Highlights: 2026 Malaysian Grand Prix', duration: '8:45', image: newsImages[0] },
-  { title: 'Qualifying Highlights: 2026 Malaysian GP', duration: '7:32', image: newsImages[1] },
-  { title: 'Top 10 Onboard Moments: Sepang Circuit', duration: '13:22', image: newsImages[2] },
-  { title: 'Norris interview: Best win of the season', duration: '5:41', image: newsImages[3] },
+  { title: 'Race Highlights: 2026 Singapore Grand Prix', duration: '9:12', image: newsImages[0] },
+  { title: 'Sprint Highlights: 2026 Singapore GP', duration: '7:38', image: newsImages[1] },
+  { title: 'Top 10 Onboard Moments: Marina Bay Circuit', duration: '13:05', image: newsImages[2] },
+  { title: 'Verstappen interview: Best win of the season', duration: '5:33', image: newsImages[3] },
 ];
 
 const fiaRegulations = [
@@ -175,7 +175,7 @@ export function HomePage() {
           <div className="max-w-2xl">
             <div className="inline-flex items-center gap-2 mb-4 animate-fade-in">
               <span className="f1-tag">2026 Season</span>
-              <span className="text-xs font-display font-bold uppercase tracking-wider text-f1-silver">Round 18 of 24</span>
+              <span className="text-xs font-display font-bold uppercase tracking-wider text-f1-silver">Round 19 of 24</span>
             </div>
             <h1 className="font-display font-black text-4xl md:text-6xl lg:text-7xl tracking-tight leading-[1.05] text-balance animate-fade-in-up">
               Welcome to<br /><span className="text-f1-red">Formula One Ace</span>
