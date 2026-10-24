@@ -10,11 +10,11 @@ import { driverStandings } from '../data/standings';
 
 const heroImage = '/images/teams/cars/mercedes_(2).jpg';
 const newsImages = [
-  'https://images.pexels.com/photos/34247182/pexels-photo-34247182.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/34247186/pexels-photo-34247186.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/11735216/pexels-photo-11735216.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-  'https://images.pexels.com/photos/13857975/pexels-photo-13857975.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   'https://images.pexels.com/photos/28680795/pexels-photo-28680795.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/29252129/pexels-photo-29252129.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/39347624/pexels-photo-39347624.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/13857975/pexels-photo-13857975.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+  'https://images.pexels.com/photos/28680794/pexels-photo-28680794.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
 ];
 
 const newsArticles = [

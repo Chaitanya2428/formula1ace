@@ -102,7 +102,7 @@ export const circuits: Circuit[] = [
   {
     id: 'sepang', round: 18, name: 'Sepang International Circuit', country: 'Malaysia', flag: '🇲🇾',
     length: '5.543 km', laps: 56, lapRecord: '1:34.581', weather: 'Humid, 32°C', lastWinner: 'Lando Norris', dates: '3–4 Oct',
-    map: 'https://images.pexels.com/photos/34247182/pexels-photo-34247182.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    map: 'https://images.pexels.com/photos/28680794/pexels-photo-28680794.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
   },
   {
     id: 'cota', round: 19, name: 'Circuit of the Americas', country: 'USA', flag: '🇺🇸',

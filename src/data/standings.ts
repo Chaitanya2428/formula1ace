@@ -12,8 +12,8 @@ export interface StandingRow {
 export const driverStandings: StandingRow[] = [
   { position: 1, driverId: 'kimiantonelli', name: 'Kimi Antonelli', team: 'Mercedes', points: 282, wins: 6, color: '#27F4D2' },
   { position: 2, driverId: 'george-russell', name: 'George Russell', team: 'Mercedes', points: 225, wins: 3, color: '#27F4D2' },
-  { position: 3, driverId: 'charles-leclerc', name: 'Charles Leclerc', team: 'Ferrari', points: 203, wins: 2, color: '#E8002D' },
-  { position: 4, driverId: 'lando-norris', name: 'Lando Norris', team: 'McLaren', points: 204, wins: 3, color: '#FF8000' },
+  { position: 3, driverId: 'lando-norris', name: 'Lando Norris', team: 'McLaren', points: 204, wins: 3, color: '#FF8000' },
+  { position: 4, driverId: 'charles-leclerc', name: 'Charles Leclerc', team: 'Ferrari', points: 203, wins: 2, color: '#E8002D' },
   { position: 5, driverId: 'lewis-hamilton', name: 'Lewis Hamilton', team: 'Ferrari', points: 187, wins: 1, color: '#E8002D' },
   { position: 6, driverId: 'max-verstappen', name: 'Max Verstappen', team: 'Red Bull Racing', points: 163, wins: 0, color: '#3671C6' },
   { position: 7, driverId: 'oscar-piastri', name: 'Oscar Piastri', team: 'McLaren', points: 138, wins: 0, color: '#FF8000' },
@@ -36,8 +36,8 @@ export const driverStandings: StandingRow[] = [
 
 export const constructorStandings: StandingRow[] = [
   { position: 1, teamId: 'mercedes', name: 'Mercedes', team: 'Mercedes', points: 507, wins: 10, color: '#27F4D2' },
-  { position: 2, teamId: 'mclaren', name: 'McLaren', team: 'McLaren', points: 342, wins: 3, color: '#FF8000' },
-  { position: 3, teamId: 'ferrari', name: 'Ferrari', team: 'Ferrari', points: 390, wins: 3, color: '#E8002D' },
+  { position: 2, teamId: 'ferrari', name: 'Ferrari', team: 'Ferrari', points: 390, wins: 3, color: '#E8002D' },
+  { position: 3, teamId: 'mclaren', name: 'McLaren', team: 'McLaren', points: 342, wins: 3, color: '#FF8000' },
   { position: 4, teamId: 'red-bull', name: 'Red Bull Racing', team: 'Red Bull Racing', points: 251, wins: 0, color: '#3671C6' },
   { position: 5, teamId: 'racing-bulls', name: 'Racing Bulls', team: 'Racing Bulls', points: 69, wins: 0, color: '#6692FF' },
   { position: 6, teamId: 'alpine', name: 'Alpine', team: 'Alpine', points: 67, wins: 0, color: '#0093CC' },
