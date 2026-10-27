@@ -9,6 +9,7 @@ import { SearchModal } from './components/SearchModal';
 import { AuthModal } from './components/AuthModal';
 import { ParticleBackground } from './components/ParticleBackground';
 import { WelcomeScreen } from './components/WelcomeScreen';
+import { NewsTicker } from './components/NewsTicker';
 import { HomePage } from './pages/HomePage';
 import { DriversPage } from './pages/DriversPage';
 import { TeamsPage } from './pages/TeamsPage';
@@ -54,7 +55,8 @@ function AppContent() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar onSearch={() => setSearchOpen(true)} onAuth={() => setAuthOpen(true)} />
-      <main className="flex-1">{renderPage()}</main>
+      <NewsTicker />
+      <main className="flex-1 pt-8">{renderPage()}</main>
       <Footer />
       <ScrollToTop />
       <SearchModal open={searchOpen} onClose={() => setSearchOpen(false)} />
