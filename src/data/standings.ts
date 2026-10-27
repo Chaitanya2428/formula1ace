@@ -10,16 +10,16 @@ export interface StandingRow {
 }
 
 export const driverStandings: StandingRow[] = [
-  { position: 1, driverId: 'kimiantonelli', name: 'Kimi Antonelli', team: 'Mercedes', points: 340, wins: 6, color: '#27F4D2' },
-  { position: 2, driverId: 'george-russell', name: 'George Russell', team: 'Mercedes', points: 238, wins: 3, color: '#27F4D2' },
-  { position: 3, driverId: 'lewis-hamilton', name: 'Lewis Hamilton', team: 'Ferrari', points: 229, wins: 2, color: '#E8002D' },
-  { position: 4, driverId: 'max-verstappen', name: 'Max Verstappen', team: 'Red Bull Racing', points: 221, wins: 2, color: '#3671C6' },
-  { position: 5, driverId: 'charles-leclerc', name: 'Charles Leclerc', team: 'Ferrari', points: 215, wins: 1, color: '#E8002D' },
-  { position: 6, driverId: 'lando-norris', name: 'Lando Norris', team: 'McLaren', points: 201, wins: 2, color: '#FF8000' },
-  { position: 7, driverId: 'oscar-piastri', name: 'Oscar Piastri', team: 'McLaren', points: 138, wins: 0, color: '#FF8000' },
-  { position: 8, driverId: 'isack-hadjar', name: 'Isack Hadjar', team: 'Red Bull Racing', points: 97, wins: 0, color: '#3671C6' },
-  { position: 9, driverId: 'liam-lawson', name: 'Liam Lawson', team: 'Racing Bulls', points: 75, wins: 0, color: '#6692FF' },
-  { position: 10, driverId: 'pierre-gasly', name: 'Pierre Gasly', team: 'Alpine', points: 41, wins: 0, color: '#0093CC' },
+  { position: 1, driverId: 'kimiantonelli', name: 'Kimi Antonelli', team: 'Mercedes', points: 365, wins: 9, color: '#27F4D2' },
+  { position: 2, driverId: 'george-russell', name: 'George Russell', team: 'Mercedes', points: 242, wins: 3, color: '#27F4D2' },
+  { position: 3, driverId: 'lewis-hamilton', name: 'Lewis Hamilton', team: 'Ferrari', points: 241, wins: 2, color: '#E8002D' },
+  { position: 4, driverId: 'max-verstappen', name: 'Max Verstappen', team: 'Red Bull Racing', points: 236, wins: 2, color: '#3671C6' },
+  { position: 5, driverId: 'charles-leclerc', name: 'Charles Leclerc', team: 'Ferrari', points: 233, wins: 1, color: '#E8002D' },
+  { position: 6, driverId: 'lando-norris', name: 'Lando Norris', team: 'McLaren', points: 211, wins: 2, color: '#FF8000' },
+  { position: 7, driverId: 'oscar-piastri', name: 'Oscar Piastri', team: 'McLaren', points: 144, wins: 0, color: '#FF8000' },
+  { position: 8, driverId: 'isack-hadjar', name: 'Isack Hadjar', team: 'Red Bull Racing', points: 105, wins: 0, color: '#3671C6' },
+  { position: 9, driverId: 'liam-lawson', name: 'Liam Lawson', team: 'Racing Bulls', points: 77, wins: 0, color: '#6692FF' },
+  { position: 10, driverId: 'pierre-gasly', name: 'Pierre Gasly', team: 'Alpine', points: 42, wins: 0, color: '#0093CC' },
   { position: 11, driverId: 'arvid-lindblad', name: 'Arvid Lindblad', team: 'Racing Bulls', points: 38, wins: 0, color: '#6692FF' },
   { position: 12, driverId: 'franco-colapinto', name: 'Franco Colapinto', team: 'Alpine', points: 27, wins: 0, color: '#0093CC' },
   { position: 13, driverId: 'oliver-bearman', name: 'Oliver Bearman', team: 'Haas', points: 23, wins: 0, color: '#B6BABD' },
@@ -35,12 +35,12 @@ export const driverStandings: StandingRow[] = [
 ];
 
 export const constructorStandings: StandingRow[] = [
-  { position: 1, teamId: 'mercedes', name: 'Mercedes', team: 'Mercedes', points: 578, wins: 10, color: '#27F4D2' },
-  { position: 2, teamId: 'ferrari', name: 'Ferrari', team: 'Ferrari', points: 444, wins: 3, color: '#E8002D' },
-  { position: 3, teamId: 'mclaren', name: 'McLaren', team: 'McLaren', points: 339, wins: 2, color: '#FF8000' },
-  { position: 4, teamId: 'red-bull', name: 'Red Bull Racing', team: 'Red Bull Racing', points: 332, wins: 2, color: '#3671C6' },
-  { position: 5, teamId: 'racing-bulls', name: 'Racing Bulls', team: 'Racing Bulls', points: 100, wins: 0, color: '#6692FF' },
-  { position: 6, teamId: 'alpine', name: 'Alpine', team: 'Alpine', points: 68, wins: 0, color: '#0093CC' },
+  { position: 1, teamId: 'mercedes', name: 'Mercedes', team: 'Mercedes', points: 607, wins: 12, color: '#27F4D2' },
+  { position: 2, teamId: 'ferrari', name: 'Ferrari', team: 'Ferrari', points: 474, wins: 3, color: '#E8002D' },
+  { position: 3, teamId: 'red-bull', name: 'Red Bull Racing', team: 'Red Bull Racing', points: 355, wins: 2, color: '#3671C6' },
+  { position: 4, teamId: 'mclaren', name: 'McLaren', team: 'McLaren', points: 355, wins: 2, color: '#FF8000' },
+  { position: 5, teamId: 'racing-bulls', name: 'Racing Bulls', team: 'Racing Bulls', points: 102, wins: 0, color: '#6692FF' },
+  { position: 6, teamId: 'alpine', name: 'Alpine', team: 'Alpine', points: 69, wins: 0, color: '#0093CC' },
   { position: 7, teamId: 'haas', name: 'Haas', team: 'Haas', points: 30, wins: 0, color: '#B6BABD' },
   { position: 8, teamId: 'audi', name: 'Audi', team: 'Audi', points: 23, wins: 0, color: '#00C8C8' },
   { position: 9, teamId: 'williams', name: 'Williams', team: 'Williams', points: 12, wins: 0, color: '#64C4FF' },
@@ -49,12 +49,12 @@ export const constructorStandings: StandingRow[] = [
 ];
 
 export const livePoints = {
-  raceWinner: { name: 'Max Verstappen', team: 'Red Bull Racing', grandPrix: 'Singapore Grand Prix', color: '#3671C6' },
-  fastestLap: { name: 'Charles Leclerc', team: 'Ferrari', time: '1:35.202', color: '#E8002D' },
-  mostPoles: { name: 'Kimi Antonelli', team: 'Mercedes', count: 10, color: '#27F4D2' },
+  raceWinner: { name: 'Kimi Antonelli', team: 'Mercedes', grandPrix: 'United States Grand Prix', color: '#27F4D2' },
+  fastestLap: { name: 'Kimi Antonelli', team: 'Mercedes', time: '1:36.842', color: '#27F4D2' },
+  mostPoles: { name: 'Kimi Antonelli', team: 'Mercedes', count: 11, color: '#27F4D2' },
   lastPodium: [
-    { pos: 1, name: 'Max Verstappen', team: 'Red Bull Racing', color: '#3671C6' },
+    { pos: 1, name: 'Kimi Antonelli', team: 'Mercedes', color: '#27F4D2' },
     { pos: 2, name: 'Charles Leclerc', team: 'Ferrari', color: '#E8002D' },
-    { pos: 3, name: 'Kimi Antonelli', team: 'Mercedes', color: '#27F4D2' },
+    { pos: 3, name: 'Max Verstappen', team: 'Red Bull Racing', color: '#3671C6' },
   ],
 };
