@@ -23,6 +23,7 @@ import { GalleryPage } from './pages/GalleryPage';
 import { ContactPage } from './pages/ContactPage';
 import { AllTimePage } from './pages/AllTimePage';
 import { PlayGamePage } from './pages/PlayGamePage';
+import { RulesPage } from './pages/RulesPage';
 
 function AppContent() {
   const { route } = useRouter();
@@ -45,6 +46,7 @@ function AppContent() {
       case '/contact': return <ContactPage />;
       case '/all-time': return <AllTimePage />;
       case '/play': return <PlayGamePage />;
+      case '/rules': return <RulesPage />;
       default: return <HomePage />;
     }
   };

@@ -18,6 +18,7 @@ const navItems = [
   { label: 'Stats', path: '/stats' },
   { label: 'Gallery', path: '/gallery' },
   { label: 'Play Game', path: '/play' },
+  { label: 'Rules', path: '/rules' },
   { label: 'Contact', path: '/contact' },
 ];
 
